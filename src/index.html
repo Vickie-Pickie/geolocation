@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+</head>
+<body>
+<div class="app">
+  <div class="timeline">
+    <div class="new_post">
+      <form id="new_post">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Новое сообщение</label>
+          <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Что-то пошло не так</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-2">
+              К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование
+              геолокации, либо введите координаты вручную.
+            </div>
+            <div>
+              <label for="geo_input" class="form-label">Координаты</label>
+              <input type="text" class="form-control" id="geo_input" placeholder="широта, долгота">
+              <div id="validationServer03Feedback" class="invalid-feedback">
+                Введите координаты в формате: 51.50851, −0.12572
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="button" class="btn btn-primary" id="send_coords">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="post-list" id="post_list">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

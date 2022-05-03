@@ -1,0 +1,32 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.timeline {
+  width: 600px;
+  padding: 24px 0;
+}
+
+.post-list {
+  margin-top: 18px;
+}
+.post-item {
+  background: #fff;
+  display: flex;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.post-item_coords {
+  margin-top: 12px;
+  color: #64748b;
+}
+
+.post-item_date {
+  color: #64748b;
+}
